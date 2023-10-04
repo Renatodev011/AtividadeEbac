@@ -121,6 +121,7 @@ for(laco=1;laco=1;)
             printf("\t1 - Registrar nomes\n");
             printf("\t2 - Consultar nomes\n");
             printf("\t3 - Excluir nomes\n\n\n");
+            printf("\t4 - Sair do sistema\n\n");
             printf("\t  opções:");//Fim do menu
 
 
@@ -134,30 +135,34 @@ switch(opcao)
 	 break;
 	 
 	 case 2:
-         consulta();
-	 break;
+    	consulta();
+		break;
 	 
 	 case 3:
-         deletar();
-     break;
+    	deletar();
+    	break;
+     
+     case 4:
+    	printf("Obrigado por utilizar o sistema\n");
+    	return 0;
+    
+		break;
+    	
      
      default:
-     	 printf("\tEsta opção não esta disponivel\n\n");
+    	printf("\tEsta opção não esta disponivel\n\n");
+    	system("pause");
+    	break;    	
+}
+}
+
+
+
+
+
+
+
+
+
          system("pause");
-     break;
 }
-
-}
-
-
-
-
-
-
-
-
-
-         system("pause");
-}
-
-
