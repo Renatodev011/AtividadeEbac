@@ -106,10 +106,21 @@ int deletar()
 
 int main()
 	{
+		setlocale(LC_ALL,"Portuguese");	
 		int opcao=0; //Definindo variável
 		int laco=1;//Definindo sequencia 
-		for(laco=1;laco=1;)
+		char senhadigitada[10]="a"; //string para senha 
+		
+		printf("###Cartório da EBAC###\n\n");
+		printf("\tLogin de administrador!\n\nDigite a sua senha:");
+		scanf("%s", senhadigitada); //salvando a string
+		if(senhadigitada[10] == "admin")// "=="comparando com outras senhas 
 {
+				
+		
+		for(laco=1;laco=1;)
+
+	{
 	
         system("cls");
 
@@ -156,3 +167,6 @@ int main()
 
     	system("pause");
 	}
+	else // Se a senha for digitada errada 
+		printf("\tSenha incorreta!"); 
+}
