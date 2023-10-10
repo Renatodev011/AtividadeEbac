@@ -109,12 +109,14 @@ int main()
 		setlocale(LC_ALL,"Portuguese");	
 		int opcao=0; //Definindo variável
 		int laco=1;//Definindo sequencia 
-		char senhadigitada[10]="a"; //string para senha 
+		char senhadigitada[10]="a"; //string para senha
+		int comparacao; 
 		
 		printf("###Cartório da EBAC###\n\n");
 		printf("\tLogin de administrador!\n\nDigite a sua senha:");
 		scanf("%s", senhadigitada); //salvando a string
-		if(senhadigitada[10] == "admin")// "=="comparando com outras senhas 
+		comparacao = strcmp(senhadigitada, "admin");
+		if(comparacao == 0)// Comparando a senha, para ser igual a 0
 {
 				
 		
